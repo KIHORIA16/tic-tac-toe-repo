@@ -1,0 +1,57 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #ffd6e7; /* Soft pink background */
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 8px;
+  justify-content: center;
+  margin: 30px auto;
+  background-color: #ff85b2; /* Board background pink */
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #ff1493; /* Deep pink border */
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.cell:hover {
+  background-color: #ffe6f2; /* Lighter pink hover */
+}
+
+#reset {
+  padding: 12px 25px;
+  font-size: 18px;
+  background: #ff69b4; /* Hot pink button */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(255, 105, 180, 0.4);
+}
+
+#reset:hover {
+  background: #ff1493; /* Darker pink on hover */
+}
+
+h1 {
+  color: #ff1493;
+  text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.2);
+}
